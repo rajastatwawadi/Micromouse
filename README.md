@@ -59,7 +59,6 @@ Subsequently initiated work on hardware components, which involved tasks such as
 The detailed hardware breakdown is mentioned below. 
 
 We went with using sensor data for precise turning, and we were able to solve the maze.
-Testing included 5 different mazes.
 
 Image of the final bot:
 
