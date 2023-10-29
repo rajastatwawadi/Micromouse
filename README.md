@@ -88,9 +88,9 @@ The connections of the circuit are as shown in the circuit digram above.
 
 ## How to run the code
 Install Arduino ide.
-Upload 
+Upload ```micromouse.ino``` file onto Arduino nano.
 
 For simulation:
-``` pip install pyamaze```
+Install the ```pyamaze module``` and run the codes in folder ``` Micromouse Algorithms```.
 
-Then you are good to go
+Then you are good to go.
