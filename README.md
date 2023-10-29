@@ -40,13 +40,14 @@ Example : ``` current_cell.value() = previous_cell.value()+1 ; ```
 The mouse then runs once to generate a maze map according to intial run.
 It then backtracks using a different path and then decides the shortest path based on these two runs.
 
-Link to extensive breakdown of code: https://hackmd.io/@l_WDq7lkQq29Pz-KD1JPNA/HkYDExRTh
-
 ![unnamed (3)](https://github.com/ChinmayK0607/Micromouse/assets/114411195/fdd92060-7501-4717-bc51-6b367a332059)
+
+Link to extensive breakdown of code: https://hackmd.io/@l_WDq7lkQq29Pz-KD1JPNA/HkYDExRTh
 
 Since the initial simulations were in python, we had to create data structures for the maze map and directions. We implemented flood fill as the final algorithm as it was the fastest comparatively and gave good results.
 
 Code for each of the above mentioned algorithms can be found in ```Algorithmic Implementations``` Folder.
+
 
 
 After this, we built a maze using corrugated sheets ,The dimensions used were 16 x 16 cell.The maze consists of  plus shaped holders that can be used to hold two or more sheets according to requirements.
