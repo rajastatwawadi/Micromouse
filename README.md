@@ -30,11 +30,17 @@ Depth First Search, on the other hand, delves as deeply as possible into a branc
 ![unnamed (1)](https://github.com/ChinmayK0607/Micromouse/assets/114411195/9875c933-78fc-4c69-aba6-03c77bc93ab8)
 
 
-4.Flood Fill
+4.Flood Fill:
+The flood fill is an optimistic search algorithm that can help in solving mazes, it simulates water flooding a maze and reaching the goal and thus the name. 
+
+It initially assumes that there are no walls and generates a first maze map using bfs/dfs. A maze map considers the goal as 0 and each preceding cell has value one more than the earlier cell.
+
+Example : ``` current_cell.value() = previous_cell.value()+1 ; ```
+
 
 ![unnamed (3)](https://github.com/ChinmayK0607/Micromouse/assets/114411195/fdd92060-7501-4717-bc51-6b367a332059)
 
-
+Since the initial simulations were in python, we had to create data structures for the maze map and directions. We implemented flood fill as the final algorithm as it was the fastest comparatively and gave good results.
 
 Code for each of the above mentioned algorithms can be found in ```Algorithmic Implementations``` Folder.
 
@@ -62,9 +68,8 @@ Here is a both high level and low level diagram for understanding of the hardwar
 ![image](https://github.com/ChinmayK0607/Micromouse/assets/114411195/b1fa66ec-f1b0-48fe-924e-58f44655b7bf)
 
 
-The circuit overall is controlled by the Arduino nano. 
+The circuit overall is controlled by an Arduino nano which controls the speed of the bot as well as maintains specific distance from the walls. 
 
-The code for movement and speed control as well for maintaining a particular distance from the wall is uploaded in the Arduino nano.
 It analyzes the data sent by the motor encoders and calculates the distance covered accordingly. 
 
 It also reads the data from all the three ultrasonic sensors and gives output to the motor so that the bot maintains a particular distance from the wall.
@@ -79,11 +84,6 @@ The connections of the circuit are as shown in the circuit digram above.
 ## Software Explanation
 
 Since the initial simulations were in python, we had to create data structures for the maze map and directions. We implemented flood fill as the final algorithm as it was the fastest comparitively and gave good results.
-
-How it works:
-The flood fill is an optimistic search algorithm that can help in solving mazes, it simulates water flooding a maze and reaching the goal and thus the name. 
-
-It initially assumes that there are no walls and generates a first maze map using bfs/dfs. A maze map considers the goal as 0 and each preceding cell has value one more than the earlier cell.
 
 Example : ``` current_cell.value() = previous_cell.value()+1 ; ```
 
