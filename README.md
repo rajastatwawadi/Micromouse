@@ -37,12 +37,17 @@ It initially assumes that there are no walls and generates a first maze map usin
 
 Example : ``` current_cell.value() = previous_cell.value()+1 ; ```
 
+The mouse then runs once to generate a maze map according to intial run.
+It then backtracks using a different path and then decides the shortest path based on these two runs.
+
+Link to extensive breakdown of code: https://hackmd.io/@l_WDq7lkQq29Pz-KD1JPNA/HkYDExRTh
 
 ![unnamed (3)](https://github.com/ChinmayK0607/Micromouse/assets/114411195/fdd92060-7501-4717-bc51-6b367a332059)
 
 Since the initial simulations were in python, we had to create data structures for the maze map and directions. We implemented flood fill as the final algorithm as it was the fastest comparatively and gave good results.
 
 Code for each of the above mentioned algorithms can be found in ```Algorithmic Implementations``` Folder.
+
 
 After this, we built a maze using corrugated sheets ,The dimensions used were 16 x 16 cell.The maze consists of  plus shaped holders that can be used to hold two or more sheets according to requirements.
 Subsequently initiated work on hardware components, which involved tasks such as testing sensors and assembling the necessary equipment.
@@ -81,27 +86,9 @@ The circuit drives its power from a 7.4V LiPo batttery.
 The connections of the circuit are as shown in the circuit digram above.
 
 
-## Software Explanation
-
-Since the initial simulations were in python, we had to create data structures for the maze map and directions. We implemented flood fill as the final algorithm as it was the fastest comparitively and gave good results.
-
-Example : ``` current_cell.value() = previous_cell.value()+1 ; ```
-
-Flood fill video:
-
-![Untitled video - Made with Clipchamp (5)](https://github.com/ChinmayK0607/Micromouse/assets/114411195/2238fc76-befa-4fdc-a332-68aed780f492)
-
-
-
-
-The mouse then runs once to generate a maze map according to intial run.
-It then backtracks using a different path and then decides the shortest path based on these two runs.
-
-Link to extensive breakdown of code: https://hackmd.io/@l_WDq7lkQq29Pz-KD1JPNA/HkYDExRTh
-
-
 ## How to run the code
-Download the arudino ide and run the files.
+Install Arduino ide.
+Upload 
 
 For simulation:
 ``` pip install pyamaze```
